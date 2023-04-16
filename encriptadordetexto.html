@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+
+    
+</head>
+
+<body>
+    
+        <div class="general">
+            <main>
+                <div class="inputContainer">
+                    <div class="containerCenter">
+                        
+                        <div class="input">
+                            <textarea placeholder="Escriba el texto aquí..." class="textInput"></textarea>
+                            <p class="aviso">No se permiten letras mayusculas ni caracteres especiales</p>
+                        </div>
+                        <div class="buttons">
+                            <div class="encriptarContainer">
+                                <button class="encriptarButton">
+                                <p>ENCRIPTAR</p>
+                            </div>
+                            <div class="desencriptarContainer">
+                                <button class="desencriptarButton">
+                                <p>DESENCRIPTAR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outputContainer">
+                    <div class="containerCenter">
+                                <div class="errorContainer">
+                                    <div class="titleError">
+                                        
+                                        <h4>Ningún mensaje fue encontrado</h4>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="mensajeContainer">
+                                    <p class="mensaje" id="textoACopiar"></p>
+                                    <button class="copiar">
+                                        <p>COPIAR</p>
+                                    </button>
+                                </div>
+                            
+                    </div>
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./js/encriptadordetexto.js"></script>
+</body>
+
+</html>
