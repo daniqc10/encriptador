@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    border: 0;
+    background:  #3b83bd ;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CONTENEDOR QUE AYUDA A CENTRAR TODO */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+/* CONTENEDOR GENERAL DE LA PAGINA */
+
+
+/* ES EL MAIN DEL CONTENIDO */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* CONTENEDOR DE LA IZQUIERDA */
+
+.inputContainer {
+    width: 50%;
+    height: 87vh;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+
+
+.containerCenter {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TEXT AREA */
+
+.input {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    color: #00C100;
+    font-size: 1.5rem;
+    width: 80%;
+    height: 72%;
+    border: #fff solid;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.input p {
+    width: 90%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* BOTONES */
+
+.buttons {
+    display: flex;
+    width: 50%;
+    height: 20%;
+    justify-content: space-around;
+  
+}
+
+
+.encriptarContainer,
+.desencriptarContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+}
+
+
+/* CONTENEDOR DE LA DERECHA */
+
+.outputContainer {
+    width: 20%;
+    height: 87vh;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+
+
+
+/* MENSAJE DE ERROR */
+
+.errorContainer {
+    color: #495057;
+    height: 40%;
+}
+
+.errorContainer h4 {
+    font-size: 2rem;
+}
+
+.errorContainer p,
+.errorContainer h4 {
+    -webkit-filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    width: 100%;
+    text-align: center;
+}
+
+/* MENSAJE NORMAL */
+
+.mensajeContainer {
+    -webkit-filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    color: #495057;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.mensaje{
+    width: 100%;
+}
+
+.copiar {
+ display: flex;
+flex-direction: row;
+align-items: space-around;
+padding: 24px;
+gap: 8px;
+
+width: 120px;
+height: 60px;
+
+background: #F0FFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+ justify-content: space-around
+    
+}
+
+
+.copiar p{
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.hidden{
+    display: none !important;
+}
+
+    
